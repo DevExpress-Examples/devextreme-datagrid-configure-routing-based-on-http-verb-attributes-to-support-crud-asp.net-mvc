@@ -18,8 +18,8 @@ Set the Controller, LoadAction, UpdateAction, InsertAction, and DeleteAction opt
 In the controller, implement data operations in these actions.
 
 See also:
-[Web API Controllers](https://docs.devexpress.com/DevExtremeAspNetMvc/401315/concepts/bind-controls-to-data/controllers#web-api-controllers)
-[Attribute Routing in ASP.NET Web API 2](https://docs.microsoft.com/en-us/aspnet/web-api/overview/web-api-routing-and-actions/attribute-routing-in-web-api-2)
+* [Web API Controllers](https://docs.devexpress.com/DevExtremeAspNetMvc/401315/concepts/bind-controls-to-data/controllers#web-api-controllers)
+* [Attribute Routing in ASP.NET Web API 2](https://docs.microsoft.com/en-us/aspnet/web-api/overview/web-api-routing-and-actions/attribute-routing-in-web-api-2)
 
 <!-- default file list -->
 *Files to look at*:
