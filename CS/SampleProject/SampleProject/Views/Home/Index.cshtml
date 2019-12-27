@@ -1,0 +1,36 @@
+@using SampleProject.Models
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Home</h2>
+
+@(Html.DevExtreme().DataGrid<SampleProject.Models.Employee>()
+    .ID("grid")
+    .Height(400)
+    .DataSource(d => d.WebApi()
+        .Controller("DataGridEmployees")
+        .LoadAction(true)
+        .UpdateAction(true)
+        .InsertAction(true)
+        .DeleteAction(true)
+        .Key("ID")
+    )
+    .ShowBorders(true)
+    .Paging(paging => paging.Enabled(false))
+    .Columns(columns => {
+        columns.Add().DataField("Prefix").Caption("Title");
+        columns.Add().DataField("FirstName");
+        columns.Add().DataField("LastName");
+        columns.Add().DataField("Position").Width(130);
+        columns.Add().DataField("BirthDate").DataType(GridColumnDataType.Date).Width(125);
+    })
+    .Editing(e => e
+        .Mode(GridEditMode.Cell)
+        .RefreshMode(GridEditRefreshMode.Reshape)
+        .AllowAdding(true)
+        .AllowDeleting(true)
+        .AllowUpdating(true)
+    )
+)
