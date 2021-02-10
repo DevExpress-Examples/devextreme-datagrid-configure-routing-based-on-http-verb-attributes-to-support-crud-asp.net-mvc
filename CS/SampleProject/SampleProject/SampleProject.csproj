@@ -303,7 +303,7 @@
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
-      <UserProperties TemplateFeatures="NET CS BASELINE" DismissedDevExtremeVersion="20.2.5.0" />
+      <UserProperties TemplateFeatures="NET CS BASELINE" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>
